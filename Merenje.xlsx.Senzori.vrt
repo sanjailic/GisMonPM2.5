@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OGRVRTDataSource>
+    <OGRVRTLayer name="Merenje-Senzori">
+        <SrcDataSource relativeToVRT="1">Merenje.xlsx</SrcDataSource>
+        <!--Header=False-->
+        <SrcLayer>Senzori</SrcLayer>
+        <Field name="Device ID" src="Device ID" type="Integer"/>
+        <Field name="Time [UTC+00:00]" src="Time [UTC+00:00]" type="DateTime"/>
+        <Field name="PM2.5 24-Hour Rolling Mean Mass Concentration Raw [ug/m3]" src="PM2.5 24-Hour Rolling Mean Mass Concentration Raw [ug/m3]" type="Real"/>
+        <GeometryType>wkbPoint</GeometryType>
+        <GeometryField encoding="PointFromColumns" x="longitude" y="latitude"/>
+    </OGRVRTLayer>
+</OGRVRTDataSource>
